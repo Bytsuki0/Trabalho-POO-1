@@ -70,7 +70,7 @@ public class Estacionamento {
                 double multa  = v.calcularMulta(horasEstadia);
                 double total  = tarifa + multa;
                 receitaTotal += total;
-                System.out.printf("Saída: %s | Hora de Entrada:%dh%d | Hora de Saída:%dh%d | Duração: %.0f h | Tarifa: R$%.2f | Multa: R$%.2f | Total: R$%.2f%n",
+                System.out.printf("Saída: %s | Hora de Entrada:%dh%d | Hora de Saída:%dh%d | Duração: %.2f h | Tarifa: R$%.2f | Multa: R$%.2f | Total: R$%.2f%n",
                                   placa,horaentrada, minentrada, hora, minuto, horasEstadia, tarifa, multa, total);
                 return true;
             }
